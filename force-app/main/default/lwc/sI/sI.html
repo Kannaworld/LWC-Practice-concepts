@@ -1,0 +1,13 @@
+<template>
+    <lightning-card tilte="Simple Interest">
+        <div>
+            <p>Simple Interst is:{si}</p>
+        </div>
+        <div>
+            <lightning-input label="Enter Principle" type="number" value={principle} onchange={principleChangeHandler}></lightning-input>
+            <lightning-input label="Enter Time" type="number" value={time} onchange={timeChangeHandler}></lightning-input>
+            <lightning-input label="Enter Rate of Interest" type="number" value={interest} onchange={interestChangeHandler}></lightning-input>
+            <lightning-button label="Calculate SI" onclick={calculateChangeHandler}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

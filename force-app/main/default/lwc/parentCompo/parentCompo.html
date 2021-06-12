@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Parent to Child Demo">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="arround-small">
+                <lightning-input label="Enter the message" onchange={handleChangeEvent}></lightning-input>
+            </lightning-layout-item>
+        </br>
+            <lightning-layout-item flexibility="auto" padding="arround-small">
+                <c-child-compo></c-child-compo>
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </lightning-card>
+</template>

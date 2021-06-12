@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>
+        <p>Ans: {result}</p>
+    </lightning-card>
+    <lightning-card>
+        <lightning-button-group>
+            <lightning-button label="1"  onclick={oneChangeHandler}></lightning-button>
+            <lightning-button label="2"  onclick={twoChangeHandler}></lightning-button>
+            <lightning-button label="3"  onclick={threeChangeHandler}></lightning-button>
+        </lightning-button-group></br>
+        <lightning-button-group>
+            <lightning-button label="4"  onclick={fourChangeHandler}></lightning-button>
+            <lightning-button label="5"  onclick={fiveChangeHandler}></lightning-button>
+            <lightning-button label="6"  onclick={sixChangeHandler}></lightning-button>
+        </lightning-button-group></br>
+        <lightning-button-group>
+            <lightning-button label="7"  onclick={sevenChangeHandler}></lightning-button>
+            <lightning-button label="8"  onclick={eightChangeHandler}></lightning-button>
+            <lightning-button label="9"  onclick={nineChangeHandler}></lightning-button>
+        </lightning-button-group></br>
+        <lightning-button-group>
+            <lightning-button label="+"  onclick={addChangeHandler}></lightning-button>
+            <lightning-button label="-"  onclick={subChangeHandler}></lightning-button>
+            <lightning-button label="/"  onclick={multiChangeHandler}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+    
+</template>

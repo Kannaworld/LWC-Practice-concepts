@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-input label ="Enter first value" type="number" value={first} onchange={firstChangeHandler}></lightning-input>
+        <lightning-input label ="Enter second value" type="number" value={second} onchange={secondChangeHandler}></lightning-input>
+        <lightning-button-group>
+            <lightning-button label="+" icon-position="left"  onclick={addChangeHandler}></lightning-button>
+            <lightning-button label="-" icon-position="center"  onclick={subChangeHandler}></lightning-button>
+            <lightning-button label="/" icon-position="right"  onclick={multiChangeHandler}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+    <lightning-card>
+        <div>
+            <p>Result is: {answer}</p>
+        </div>
+    </lightning-card>
+</template>

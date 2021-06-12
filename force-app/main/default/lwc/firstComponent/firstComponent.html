@@ -1,0 +1,39 @@
+<template>
+    <template if:false={show}>
+        <lightning-card>
+            <div>
+            <p>Name  :{name}</p>
+            <p>Address  :{address}</p>
+            <p>Place :{place}</p>
+            </div>
+            <div class='slds-m-arround-medium'>
+                <lightning-button label="Click to submit again" icon-position="center"   onclick={againchangeHandler}></lightning-button>   
+            </div>
+        </lightning-card>
+        
+    </template>
+    <template if:true={show}>
+        <lightning-card title="First component" >
+            <div class='slds-m-arround-medium'>
+            <p>Name  :{name}</p>
+            <p>Address  :{address}</p>
+            <p>Place :{place}</p>
+            </div>
+            
+            <div class='slds-m-arround-medium'>
+            <lightning-input label="Enter student name" value={name} onchange={nameChangeHandler}></lightning-input>   
+            </div>
+            <div class='slds-m-arround-medium'>
+                <lightning-input label="Enter student address" value={address} onchange={addressChangeHandler}></lightning-input>   
+            </div>
+            <div class='slds-m-arround-medium'>
+                <lightning-input label="Enter student place" value={place} onchange={placeChangeHandler}></lightning-input>   
+            </div>
+            <div class='slds-m-arround-medium'>
+                <lightning-button label="Submit values" icon-position="center"   onclick={buttonchangeHandler}></lightning-button>   
+            </div>
+
+        </lightning-card>
+    </template>
+    
+</template>
