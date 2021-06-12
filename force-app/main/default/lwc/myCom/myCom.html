@@ -1,0 +1,12 @@
+<template>
+    <div class = "slds-box">
+        <lightning-input type="Number" label ="First value:" value={firstNum} onchange={firstChange} ></lightning-input>
+        <lightning-input type="Number" label ="Second Value:" value={secondNum} onchange={secondChange}></lightning-input>
+        <lightning-button label="Add values" varient="brand" onclick={additonHandler}></lightning-button>
+    </div>
+
+    <p>The First value is : {firstNum}</p>
+    <p>The Second value is : {secondNum}</p>
+    <p>The result is : {result}</p>
+    
+</template>
